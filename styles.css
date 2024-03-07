@@ -1,0 +1,619 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+  }
+  /* Layout*/
+  .layout {
+    display: grid;
+    grid-template-columns: 265px auto 350px;
+    margin: 0 auto;
+    max-width: 1250px;
+  }
+  /* Right sidebar styling */
+  .layout__right-sidebar {
+    position: absolute;
+    width: 400px;
+    margin-right: 10px;
+  }
+  /* Adjustments for the left sidebar container */
+  .layout__left-sidebar-container {
+    margin-top: -9px;
+  }
+  /* Left sidebar styling */
+  .layout__left-sidebar {
+    position: fixed;
+    left: 100px;
+  }
+  /* Logo styling */
+  .logo {
+    height: 45px;
+    margin-left: 30px;
+    margin-top: 15px;
+  }
+  /* Hover effect for the logo */
+  .logo:hover {
+    cursor: pointer;
+    border-radius: 900px;
+    background: #e7e7e7;
+  }
+  /* Sidebar menu items styling */
+  .sidebar-menu__items {
+    font-size: 22px;
+    color: rgb(15, 20, 25);
+    display: flex;
+    align-items: center;
+    font-weight: 400;
+    padding: 10px;
+    margin-right: 150px;
+  }
+  /* Hover effect for sidebar menu items */
+  .sidebar-menu__items:hover {
+    background: #e7e7e7;
+    color: rgb(52, 45, 45);
+    border-radius: 30px;
+    cursor: pointer;
+    display: flex;
+  }
+  /* Active state styling for sidebar menu items */
+  .sidebar-menu__items--active {
+    color: black;
+    margin-top: 5px;
+    margin-left: 25px;
+  }
+  /* Icon styling for active sidebar menu items */
+  .sidebar-menu__items--active i{
+    font-size: 31px;
+    margin-right:14px;
+  }
+  /* Additional styling for specific sidebar menu items */
+  .sidebar-menu__items-explore{
+    height: 22px;
+    margin-right: 15px;
+    margin-left: 30px;
+  }
+
+  .sidebar-menu__items-twitter {
+    height: 35px;
+    margin-right: 12px;
+    margin-left: 25px;
+
+  }
+  .sidebar-menu__items-icon {
+    height: 26px;
+    margin-left: 10px;
+    padding: 0px 17px;
+  }
+  /* Invert icon color for active sidebar menu items */
+  .sidebar-menu__items--active .sidebar-menu__items-icon {
+    filter: invert(46%) sepia(99%) saturate(1449%) hue-rotate(176deg)
+      brightness(100%) contrast(91%);
+  }
+  /* Post button styling*/
+  .post-button {
+    background: #1da1f2;
+    width: 250px;
+    border-radius: 30px;
+    margin-left: 30px;
+    font-size: 18px;
+    color: white;
+    display: flex;
+    align-items: center;
+    font-weight: 700;
+    padding: 15px;
+    margin-right: 90px;
+    justify-content: center;
+    margin-top: 10px;
+  }
+  /* Hover effect for post button */
+  .post-button:hover {
+    background: #0093ff;
+    cursor: pointer;
+  }
+  /* Profile Button */
+  .profile-button {
+    position: fixed;
+    bottom: 20px;
+    width: 290px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-radius: 50px;
+    font-size: 16px;
+    margin-left: 14px;
+    margin-top: 10px;
+  }
+  /* Hover effect for profile button */
+  .profile-button:hover {
+    background: #c3c2c2;
+    color: black;
+    border-radius: 50px;
+    cursor: pointer;
+    background: rgb(239, 243, 244);
+    cursor: pointer;
+    /* display: flex; */
+  }
+  /* Profile information styling */
+  .profile-info {
+    height: 45px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+  }
+  .profile-info span {
+    line-height: 10px;
+    margin-top:10px;
+    display: flex;
+  }
+/* Styling for profile image */
+  .profile-img {
+    border-radius: 50px;
+    margin-right: 10px;
+  }
+  /* Styling for profile name */
+  .name {
+    font-weight: 700;
+    color: rgb(15, 20, 25);
+    font-size: 15px;
+  }
+  /* Styling for username */
+  .username {
+    color: rgb(83, 100, 113);
+  }
+  /* Styling for option icon */
+  .option-icon {
+    font-size: 16px;
+    margin-top: 2px;
+  }
+  /* sidebar ends */
+ /* main bar starts */
+  .main {
+    display: block;
+    width: 100%;
+    border-bottom: 1px solid #e8e8e8;
+    border-left: 1px solid #e8e8e8;
+    border-right: 1px solid #e8e8e8;
+  }
+ /* Styling for homebar */
+  .homebar{
+    display: flex;
+  }
+/* Styling for home bar sections */
+  .homebar-section {
+    flex: 1;
+    display: flex;
+    padding: 10px;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    border-bottom: 1px solid  #e8e8e8;
+  }
+  /* Hover effect for home bar sections */
+  .homebar-section:hover{
+    background: #f5f8fa;
+    cursor: pointer;
+  }
+  /* Active state styling for home bar sections */
+  .homebar-section.active {
+   border-bottom: 2px solid #0093ff;
+   font-weight: bold;
+  } 
+  /* Additional styling for a specific home bar section */
+  .homebar-section-1 {
+    padding: 10px;
+    box-sizing: border-box;
+    border-bottom: 1px solid  #e8e8e8;
+    display: flex;
+    justify-content:flex-end;
+    align-items: center;
+  }
+  .homebar-section-:hover{
+    background: #f5f8fa;
+    cursor: pointer;
+  }
+/* Styling for the "Your Tweets" section */
+  .your-tweets {
+    display: block;
+    width: 100%;
+    border-bottom: 1px solid #e8e8e8;
+    height: 130px;
+  }
+  /* Styling for the profile message section */
+  .profile-message {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 10px 15px;
+  }
+  .profile-message img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    cursor: pointer;
+    opacity: 0.9;
+  }
+  .profile-message img:hover {
+    opacity: 1;
+  }
+ /* Styling for the tweet input container */
+.tweet-input-container {
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+}
+.tweet-input-container input{
+    font-size: 20px;
+    color: #707375;
+    letter-spacing: 0.5px;
+}
+/* Styling for the tweet prompt*/
+.tweet-prompt svg {
+    color:rgb(29 155 240);
+    height: 13px;
+
+}
+.tweet-prompt span {
+    color:rgb(29 155 240);
+    font-size: 14px;
+    font-weight: bold;
+}
+/* Styling for extra icons */
+  .add-extra {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0 0 10px 0;
+  }
+  .images-more {
+    margin: 15px 0 5px 7px;
+    margin-left: 70px;
+  }
+  .images-more span i {
+    text-decoration: none;
+    color: rgb(29 155 240);
+    font-size: 15px;
+    padding: 8px 6px;
+    border-radius: 50%;
+  }
+  .images-more span i:hover {
+    background: #f5f8fa;
+    cursor: pointer;
+  }
+  .add-extra span button {
+    margin: 0 30px 0 0;
+    padding: 10px 25px;
+    border-radius: 30px;
+    border: none;
+    background: rgb(29 155 240);
+    font-size: 16px;
+    color: white;
+    font-weight: 700;
+  }
+  .add-extra span button:hover {
+    background: rgb(29 155 240);
+    cursor: pointer;
+  }
+  /* Styling for the tweet */
+  .tweet {
+    display: flex;
+    border-bottom: 1px solid #e6ecf0;
+    padding: 10px 15px;
+    border-top: 1px solid #e6ecf0;
+  }
+  .tweet:hover {
+    background: rgb(239, 243, 244);
+    cursor: pointer;
+  }
+  .tweet a {
+    color: rgb(29 155 240);
+    text-decoration: none;
+  }
+  /* .tweet a: :hover{
+      text-decoration: underline;
+  } */
+  .tweet__author-logo {
+    width: 49px;
+    height: 49px;
+    border-radius: 50%;
+    margin-right: 10px;
+  }
+  .tweet__author-name img{
+    height:20px
+  }
+  .tweet__header {
+    display: flex;
+  }
+  .tweet__author-name {
+    font-size: 15px;
+    font-weight: 700;
+    color: #14171a;
+    margin-right: 5px;
+  }
+  .tweet__author-slug {
+    color: #5b7083;
+    font-size: 15px;
+  }
+  .tweet__published-time {
+    margin-left: 5px;
+    color: #657786;
+  }
+  .tweet__img {
+    width: 100%;
+    border-radius: 15px;
+    margin-top: 10px;
+  }
+  .tweet__content_tags p{
+    color:rgb(29 155 240);
+  }
+  /* Styling for the tweet reactions */
+  .reaction-icons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 85%;
+    opacity: 0.7;
+    margin-bottom: 0;
+    margin-top: 10px;
+  }
+  .reaction-icons{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    padding: 0 0 0 5px;
+  }
+  .comments {
+    color: #14171a;
+    cursor: pointer;
+  }
+  .comments:hover {
+    color: rgb(29 155 240);
+    cursor: pointer;
+  }
+  .repost {
+    color: #14171a;
+    cursor: pointer;
+  }
+  .repost:hover {
+    color: green;
+    cursor: pointer;
+  }
+  .likes {
+    cursor: pointer;
+    color: #14171a;
+  }
+  
+  .likes:hover {
+    cursor: pointer;
+    color: rgb(238, 34, 34);
+  }
+  .upload {
+    color: #14171a;
+    cursor: pointer;
+  }
+  .upload:hover {
+    color: rgb(29 155 240);
+    cursor: pointer;
+  }
+  /* RIGHT SIDEBAR */
+  /* Styling for the searchbar */
+  .search-icon {
+    margin-left: 5px;
+    margin-right: 25px;
+  }
+  .searchbar {
+    width: 100%;
+    max-width: 330px;
+    background: rgb(239, 243, 244);
+    display: flex;
+    align-items: center;
+    border-radius: 60px;
+    padding: 10px 15px;
+    margin-bottom: 20px;
+    margin-top: 5px;
+    margin-left: 20px;
+  }
+  .searchbar input {
+    background: transparent;
+    flex: 1;
+    border: 0;
+    outline: none;
+    font-size: 15px;
+  }
+  ::placeholder {
+    color: rgb(115, 117, 119);
+    margin-left: 15px;
+  }
+  .searchbar button img {
+    width: 25px;
+  }
+
+/* Styling for the subscription block */
+  .right-sidebar-block{
+  padding-left: 20px;;
+}
+ .right-sidebar-headings {
+    font-size: 20px;
+    font-weight:900;
+    padding: 8px 15px 15px 20px;
+    color: #14171a;
+  }
+  .subscribe-to-premium-block {
+    border-radius: 15px;
+    background: #f5f8fa;
+    margin:0 0 20px 20px;
+    padding-bottom: 15px;
+  }
+  .subscribe-to-premium-block:hover{
+    background: #e7e7e7;
+    cursor: pointer;
+  }
+  .subscribe-to-premium-information {
+    font-size: 15px;
+    padding-bottom: 10px;
+  }
+  /* Styling for the call-to-action prompt */
+  .call-to-action-subscribe button {
+    margin: 0 30px 0 0;
+    padding: 7px 16px;
+    border-radius: 50px;
+    border: none;
+    background: black;
+    font-size: 15px;
+    color: white;
+    font-weight: 600;   
+}
+.call-to-action-subscribe button:hover {
+      cursor: pointer;
+}
+
+/* Styling for the trends block*/
+.trends-for-you-block {
+    border-radius: 15px;
+    background: #f5f8fa;
+    margin-left: 20px;
+}
+.trends {
+  display: flex;
+  flex-direction: column; 
+  padding: 0px 20px; 
+}
+.trends:hover {
+  background: #e7e7e7;
+  cursor: pointer;
+}
+
+.trends-for-you-subheading{
+  font-size: 13px;
+  color:#536471
+}
+
+.trends-for-you-information {
+    font-size: 15px;
+    font-weight: 350;
+    color: #657786;
+}
+.trends-for-you-hastag{
+  font-weight: bold;
+  color:black; 
+}
+.trends-for-you-posts{
+  font-size: 13px ;
+  color: #536471
+}
+
+/* Styling for the who-to-follow-block */
+.who-to-follow-block{
+  border-radius: 15px;
+  background: #f5f8fa;
+  margin: 20px 0 20px 20px; 
+}
+.user-details{
+  flex-grow: 1;
+}
+.user-details span{
+  font-weight: bold;
+}
+.user-details p{
+  color:#5b7083;
+  font-size: 15px
+}
+.person {
+  display: flex;
+  padding: 10px 15px;;
+  align-items: center;
+}
+.person:hover {
+  background: #e7e7e7;
+  cursor: pointer;
+}
+.person-profile img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  opacity: 0.9;
+  margin-right: 10px;
+}
+.person-profile img:hover {
+    opacity: 1;
+}
+
+ /* Styling for the call-to-action-follow prompt */
+.call-to-action-follow {
+  margin-left: auto; 
+}
+.call-to-action-follow button {
+  display: flex;
+  align-items: start;
+  padding: 5px 20px;
+  border-radius: 30px;
+  border: none;
+  background: black;
+  font-size: 14px;
+  color: white;
+  font-weight: 700;
+  margin-left: 20px; 
+}
+.call-to-action-follow button:hover {
+  cursor: pointer;
+}
+/* Style for show more section */ 
+.show-more p{
+  color: #00a7ff;
+  font-size: 15px;
+  margin-left: 10px;
+  padding:15px 0px 15px  5px ;
+  color: #00a7ff;
+}
+.show-more p:hover{
+  cursor: pointer; 
+}
+/* Style for footer section */
+.footer-info {
+  margin-bottom: 12px;
+  margin-top: 20px;
+  margin-left: 35px;
+}
+.footer-section span {
+  font-size: 13px;
+  font-weight: 400;
+  margin-right: 5px;
+  color: rgb(83, 100, 113);
+}
+.footer-section span:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+  
+.dots {
+  display: flex;
+  flex-direction: column;
+  font-size: 16px;
+  align-items: end;
+  margin-bottom: -20px;
+  color: #536471
+  /* margin-top: -7px; */
+}
+
+/* Styles for mobile navigation bar */
+.mobile-nav {
+  color: red;
+  height: 3rem;
+  width: 100%;
+}
+/* Button for toggling mobile navigation menu, hidden by default */
+.mobile-btn {
+  display: none;
+}
+/* Container for navigation links, hidden by default */
+.directory {
+  display: none;
+}
+/* Style for icons within the directory menu */
+.directory .icon {
+  width: 24px;
+  margin-right: 40px;
+}
+  
